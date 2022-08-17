@@ -117,6 +117,29 @@ class app_drawer extends StatelessWidget {
             const Divider(
               color: Colors.black,
             ),
+            GestureDetector(
+              onTap: () {
+                // ignore: avoid_print
+                print('onTap');
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: Icon(Icons.category_sharp, color: Colors.black)),
+                  Padding(
+                    padding: EdgeInsets.only(right: 160.0),
+                    child: Text('Catalog',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        )),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
