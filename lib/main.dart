@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/constants/app_drawer.dart';
+
 void main() {
   runApp(const MaterialApp(
     home: Arrival(),
@@ -40,18 +42,8 @@ class _ArrivalState extends State<Arrival> {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 40.0),
-          child: ListView(
-            children: [
-              Image.asset(
-                'assets/images/icons/app_icon/app_icon.png',
-              ),
-            ],
-          ),
-        ),
-      ),
+      // ignore: prefer_const_constructors
+      drawer: app_drawer(),
     );
   }
 }
