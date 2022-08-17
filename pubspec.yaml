@@ -34,9 +34,25 @@ flutter:
 
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+assets:
+ - assets/images/icons/app_bar/cart.png
+ - assets/images/icons/app_bar/sort.png
+ - assets/images/icons/app_icon/app_icon.png
+ - assets/images/icons/drawer/cart_add.png
+ - assets/images/icons/drawer/catalog.png
+ - assets/images/icons/drawer/discount.png
+ - assets/images/icons/drawer/help.png
+ - assets/images/icons/drawer/home.png
+ - assets/images/icons/drawer/hot_sale.png
+ - assets/images/icons/drawer/new_arrival.png
+ - assets/images/icons/drawer/notification.png
+ - assets/images/icons/drawer/profile.svg
+ - assets/images/icons/drawer/settings.png
+  - assets/images/icons/drawer/track_orders.png
+
+
+ - images/a_dot_burr.jpeg
+ - images/a_dot_ham.jpeg
 
   
   # example:
