@@ -14,14 +14,16 @@ class app_drawer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 15.0, horizontal: 20),
+                  const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20),
               child: Image.asset(
                 'assets/images/icons/app_icon/app_icon.png',
               ),
             ),
+            const drawer_nav(name: 'Lagos', icon: Icons.location_on),
             const Text('Last Checked',
                 style: TextStyle(
                   color: Colors.black,
@@ -34,6 +36,70 @@ class app_drawer extends StatelessWidget {
             const drawer_nav(
               icon: Icons.home,
               name: 'Home',
+            ),
+            const drawer_nav(
+              icon: Icons.person,
+              name: 'Profile',
+            ),
+            const drawer_nav(
+              icon: Icons.settings,
+              name: 'Settings',
+            ),
+            const drawer_nav(
+              icon: Icons.notifications,
+              name: 'Notifications',
+            ),
+            const drawer_nav(
+              icon: Icons.help_center,
+              name: 'Help',
+            ),
+            const SizedBox(height: 5),
+            const Divider(
+              color: Colors.black,
+            ),
+            const drawer_nav(
+              icon: Icons.category,
+              name: 'Catalog',
+            ),
+            const drawer_nav(
+              icon: Icons.share_arrival_time,
+              name: 'New Arrival',
+            ),
+            const drawer_nav(
+              icon: Icons.shopping_cart,
+              name: 'Hot Sales',
+            ),
+            const drawer_nav(
+              icon: Icons.credit_card,
+              name: 'Coupons',
+            ),
+            const SizedBox(height: 5),
+            const Divider(
+              color: Colors.black,
+            ),
+            const drawer_nav(
+              icon: Icons.shopping_cart,
+              name: 'Cart',
+            ),
+            const drawer_nav(
+              icon: Icons.favorite,
+              name: 'Saved Items',
+            ),
+            const drawer_nav(
+              icon: Icons.track_changes,
+              name: 'Track Orders',
+            ),
+            const SizedBox(height: 5),
+            const Divider(
+              color: Colors.black,
+            ),
+            const drawer_nav(
+              icon: Icons.facebook,
+              name: 'Like Us',
+            ),
+            const drawer_nav(
+              icon: Icons.exit_to_app,
+              name: 'Exit',
             ),
           ],
         ),

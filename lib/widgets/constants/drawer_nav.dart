@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class drawer_nav extends StatelessWidget {
   const drawer_nav({
     required this.name,
@@ -21,7 +22,7 @@ class drawer_nav extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.only(left: 5),
               child: Icon(icon, color: Colors.black)),
           Padding(
             padding: const EdgeInsets.only(right: 160.0),
