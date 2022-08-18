@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer_nav.dart';
+
 // ignore: camel_case_types
 class app_drawer extends StatelessWidget {
   const app_drawer({
@@ -20,20 +22,6 @@ class app_drawer extends StatelessWidget {
                 'assets/images/icons/app_icon/app_icon.png',
               ),
             ),
-            const ListTile(
-              title: Text(
-                'Lagos, Nigeria',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-              leading: Icon(
-                Icons.location_on,
-                color: Colors.black,
-              ),
-            ),
             const Text('Last Checked',
                 style: TextStyle(
                   color: Colors.black,
@@ -43,102 +31,9 @@ class app_drawer extends StatelessWidget {
             const Text('Thur, 12 July 2022',
                 style: TextStyle(color: Colors.black, fontSize: 8)),
             const SizedBox(height: 8),
-            const ListTile(
-              leading: Icon(
-                Icons.home,
-                color: Colors.black,
-              ),
-              title: Text(
-                'Home',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-            ),
-            const ListTile(
-              leading: Icon(
-                Icons.person,
-                color: Colors.black,
-              ),
-              title: Text(
-                'Profile',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-            ),
-            const ListTile(
-              leading: Icon(
-                Icons.settings,
-                color: Colors.black,
-              ),
-              title: Text(
-                'Settings',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-            ),
-            const ListTile(
-              leading: Icon(
-                Icons.notifications,
-                color: Colors.black,
-              ),
-              title: Text(
-                'Notifications',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-            ),
-            const ListTile(
-              leading: Icon(
-                Icons.help,
-                color: Colors.black,
-              ),
-              title: Text(
-                'Help',
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
-                    color: Colors.black),
-              ),
-            ),
-            const SizedBox(height: 8),
-            const Divider(
-              color: Colors.black,
-            ),
-            GestureDetector(
-              onTap: () {
-                // ignore: avoid_print
-                print('onTap');
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Icon(Icons.category_sharp, color: Colors.black)),
-                  Padding(
-                    padding: EdgeInsets.only(right: 160.0),
-                    child: Text('Catalog',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        )),
-                  ),
-                ],
-              ),
+            const drawer_nav(
+              icon: Icons.home,
+              name: 'Home',
             ),
           ],
         ),
