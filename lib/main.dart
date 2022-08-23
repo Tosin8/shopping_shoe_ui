@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/constants/app_drawer.dart';
-import 'widgets/constants/main_content.dart';
-
 void main() {
   runApp(const MaterialApp(
     home: Arrival(),
@@ -46,8 +43,19 @@ class _ArrivalState extends State<Arrival> {
 //         // ignore: prefer_const_constructors
 //         drawer: app_drawer(),
 //         body: const main_content());
- // }
-    )
- }
- 
+        // }
+        body: Column(children: [
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 40),
+              child: Image.asset('asset/images/icons/app_icon/app_icon.png')),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Icon(Icons.menu),
+                Text('New Arrival'),
+                Icon(Icons.shopping_cart),
+                Icon(Icons.sort),
+              ])
+        ]));
+  }
 }
