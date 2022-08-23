@@ -22,29 +22,32 @@ class _ArrivalState extends State<Arrival> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: const Text(
-            'New Arrival',
-            style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.5,
-                color: Colors.black),
-          ),
-          centerTitle: true,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.shopping_cart),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.sort),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        // ignore: prefer_const_constructors
-        drawer: app_drawer(),
-        body: const main_content());
-  }
+//         appBar: AppBar(
+//           title: const Text(
+//             'New Arrival',
+//             style: TextStyle(
+//                 fontSize: 15,
+//                 fontWeight: FontWeight.bold,
+//                 letterSpacing: 1.5,
+//                 color: Colors.black),
+//           ),
+//           centerTitle: true,
+//           actions: [
+//             IconButton(
+//               icon: const Icon(Icons.shopping_cart),
+//               onPressed: () {},
+//             ),
+//             IconButton(
+//               icon: const Icon(Icons.sort),
+//               onPressed: () {},
+//             ),
+//           ],
+//         ),
+//         // ignore: prefer_const_constructors
+//         drawer: app_drawer(),
+//         body: const main_content());
+ // }
+    )
+ }
+ 
 }
